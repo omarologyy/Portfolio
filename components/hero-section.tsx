@@ -1,6 +1,8 @@
-import { Navbar } from "@/components/navbar"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react"
+import { Navbar } from "@/components/navbar";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { BsLinkedin, BsTwitterX } from "react-icons/bs";
+import { ImGithub } from "react-icons/im";
 
 export function HeroSection() {
   return (
@@ -12,7 +14,8 @@ export function HeroSection() {
             Hi, I'm <span className="text-primary">Umar</span>
           </h1>
           <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-            Frontend Developer specializing in building exceptional digital experiences with modern web technologies.
+            Frontend Developer specializing in building exceptional digital
+            experiences with modern web technologies.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" asChild>
@@ -26,8 +29,13 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center gap-4 pt-4">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/omarologyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5" />
+              <a
+                href="https://github.com/omarologyy"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <ImGithub className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
@@ -37,14 +45,22 @@ export function HeroSection() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <BsLinkedin className="h-5 w-5" />
               </a>
             </Button>
-            
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href="https://www.linkedin.com/in/umar-sulaiman-a91a43175"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <BsTwitterX className="h-5 w-5" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
