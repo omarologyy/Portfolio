@@ -11,12 +11,12 @@ import {
   SiDjango,
   SiChakraui,
   SiVuedotjs,
-} from "react-icons/si"
-import { Card, CardContent } from "@/components/ui/card"
+} from "react-icons/si";
+import { Card, CardContent } from "@/components/ui/card";
 
 const skills = [
   { name: "React", icon: SiReact, color: "#61DAFB" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#0070F3" },
   { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
@@ -27,13 +27,15 @@ const skills = [
   { name: "Git", icon: SiGit, color: "#F05032" },
   { name: "Redux", icon: SiRedux, color: "#764ABC" },
   { name: "Sass", icon: SiSass, color: "#CC6699" },
-]
+];
 
 export function SkillsSection() {
   return (
     <section id="skills" className="py-16 md:py-24">
       <div className="container">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">My Skills</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
+          My Skills
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {skills.map((skill) => (
             <Card key={skill.name} className="overflow-hidden">
@@ -46,6 +48,5 @@ export function SkillsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
