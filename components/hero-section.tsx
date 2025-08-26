@@ -50,7 +50,7 @@ export function HeroSection() {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://www.linkedin.com/in/umar-sulaiman-a91a43175"
+                href="https://x.com/clingparin?t=86RMq7LQpmUidlAyGOZzA&s=08"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X"
