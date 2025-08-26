@@ -39,7 +39,7 @@ const projects = [
       "A business dashboard that aggregates sales, customer retention, and market trends.",
     image:
       "https://res.cloudinary.com/dcm7zyplb/image/upload/v1756122580/luke-chesser-JKUTrJ4vK00-unsplash_ibv6p7.jpg",
-    tags: ["Typescript", "React", "Tailwind css"],
+    tags: ["Typescript", "React", "Tailwind css", "Serper API"],
     liveUrl: "https://local-business-analytics-dashboard.vercel.app/",
     githubUrl:
       "https://github.com/omarologyy/Local-Business-Analytics-Dashboard",
