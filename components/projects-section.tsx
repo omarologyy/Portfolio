@@ -17,21 +17,21 @@ const projects = [
     githubUrl: "https://github.com/omarologyy/E-commerce",
   },
   {
-    title: "Invoice to Payment Made Easy",
+    title: "Cultivating Spiritual Consistency in a Digital Age",
     description:
-      " This platform allows businesses to create, send, and track invoices, then easily receive payments from their clients, optimizing their cash flow and providing a smooth payment experience.",
+      "A spiritual wellness mobile application that utilizes AI to help users foster a deeper, more consistent relationship with the Qur'an through personalized guidance and a tranquility-focused interface.",
     image:
-      "https://res.cloudinary.com/dsezfimzp/image/upload/v1743036614/card_qsxs80.jpg",
+      "https://res.cloudinary.com/dcm7zyplb/image/upload/v1775254480/WhatsApp_Image_2026-04-03_at_11.09.39_PM_bzmrah.jpg",
     tags: [
-      "React",
-      "ChakraUI",
+      "Next.js",
+      "TypeScript",
+      "React Native",
       "Nodejs",
-      "Django",
-      "API Integration",
-      "Linear",
+      "PostgreSQL",
+      "Expo CLI",
     ],
-    liveUrl: "https://www.pedmonie.com.ng/",
-    githubUrl: "https://github.com/omarologyy/pedmonie-frontend",
+    liveUrl: "https://deenai.app/",
+    githubUrl: "https://github.com/omarologyy/DeenAI",
   },
   {
     title: "A Local Business Analytics Dashboard",
@@ -43,6 +43,26 @@ const projects = [
     liveUrl: "https://local-business-analytics-dashboard.vercel.app/",
     githubUrl:
       "https://github.com/omarologyy/Local-Business-Analytics-Dashboard",
+  },
+  {
+    title: "Instagram Inspired App",
+    description:
+      "A social media mobile app with an instagram intuitive design. This showed real world social media app behaviour.",
+    image:
+      "https://res.cloudinary.com/dcm7zyplb/image/upload/v1775323243/insta_gln4ny.png",
+    tags: ["React Native", "Firebase", "Convex"],
+    liveUrl: "https://appetize.io/app/b_pp4zf4smhnxfurgjmah3ncv224",
+    githubUrl: "https://github.com/omarologyy/FramezApp",
+  },
+  {
+    title: "Ticket Management App",
+    description:
+      "A ticket management web application for handling and tracking support tickets.",
+    image:
+      "https://res.cloudinary.com/dcm7zyplb/image/upload/v1775324015/ticket_rclzbs.jpg",
+    tags: ["Vue", "Tailwind CSS"],
+    liveUrl: "https://hng-stage-2b.vercel.app/",
+    githubUrl: "https://github.com/omarologyy/Ticket-App",
   },
   {
     title: "Mini Cart Project",
