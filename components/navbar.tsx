@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -22,29 +22,54 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
-          <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="#about"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             About
           </Link>
-          <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="#skills"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Skills
           </Link>
-          <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="#projects"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Projects
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="#contact"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Contact
           </Link>
         </nav>
 
         <Button className="hidden md:inline-flex" asChild>
-          <a href="https://1drv.ms/b/c/f806d7a2294ac8de/EeJbkEBuzG9LpcQ4s4YMCloB4_Rxf_GD4jSimiNzjWu26w?e=hUWXtg" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1lw4XmETRNQyFOF3AJ0HvM6GJ9DWXhm9O/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </a>
         </Button>
 
         {/* Mobile Navigation Toggle */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </Button>
       </div>
 
@@ -81,7 +106,11 @@ export function Navbar() {
               Contact
             </Link>
             <Button className="w-full" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://drive.google.com/file/d/1lw4XmETRNQyFOF3AJ0HvM6GJ9DWXhm9O/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Resume
               </a>
             </Button>
@@ -89,6 +118,5 @@ export function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
-
